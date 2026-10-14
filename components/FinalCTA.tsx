@@ -1,7 +1,7 @@
 import React from "react";
 import ScrollReveal from "./ScrollReveal";
-import { CALENDLY_LINK, PROPOSAL_DETAILS } from "@/lib/constants";
-import { Calendar, Mail, Phone, ExternalLink } from "lucide-react";
+import { WHATSAPP_LINK, PROPOSAL_DETAILS } from "@/lib/constants";
+import { MessageCircle, Mail, Phone, ExternalLink } from "lucide-react";
 
 export default function FinalCTA() {
   const { sender } = PROPOSAL_DETAILS;
@@ -27,13 +27,13 @@ export default function FinalCTA() {
           {/* Big Gold Button */}
           <div className="mb-10">
             <a
-              href={CALENDLY_LINK}
+              href={WHATSAPP_LINK}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-card text-base sm:text-lg font-bold text-navy bg-gold hover:bg-gold-hover transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-navy active:scale-[0.99]"
             >
-              <Calendar className="w-5 h-5 text-navy" />
-              <span>Book a 20-minute call</span>
+              <MessageCircle className="w-5 h-5 text-navy" />
+              <span>Let&apos;s chat</span>
             </a>
           </div>
 

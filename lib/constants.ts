@@ -1,9 +1,9 @@
 /**
  * Central constants and configuration for the Hamlet Hotels personal proposal.
- * Placeholders are kept in ALL CAPS for straightforward search and replace.
  */
 
-export const CALENDLY_LINK = "CALENDLY_LINK_PLACEHOLDER";
+export const WHATSAPP_LINK = "https://wa.me/447818657095";
+export const CALENDLY_LINK = WHATSAPP_LINK; // Aliased for compatibility
 
 export const PROPOSAL_DETAILS = {
   recipient: {
@@ -27,6 +27,7 @@ export const PROPOSAL_DETAILS = {
     location: "London, UK",
     phone: "+44 7818 657095",
     phoneHref: "tel:+447818657095",
+    whatsappHref: WHATSAPP_LINK,
     email: "kesavperso@gmail.com",
     emailHref: "mailto:kesavperso@gmail.com",
     linkedIn: "https://www.linkedin.com/in/kesavaram-s/",

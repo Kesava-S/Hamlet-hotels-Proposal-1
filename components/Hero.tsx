@@ -1,6 +1,6 @@
 import React from "react";
-import { CALENDLY_LINK } from "@/lib/constants";
-import { ArrowDown, Calendar, Building2, Layers, Mail } from "lucide-react";
+import { WHATSAPP_LINK } from "@/lib/constants";
+import { ArrowDown, MessageCircle, Building2, Layers, Mail } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -45,13 +45,13 @@ export default function Hero() {
       {/* CTA Button and Secondary Link */}
       <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
         <a
-          href={CALENDLY_LINK}
+          href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
           className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-card text-base font-semibold text-navy bg-gold hover:bg-gold-hover transition-all duration-200 shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 active:scale-[0.99]"
         >
-          <Calendar className="w-4 h-4" />
-          <span>Book a 20-minute call</span>
+          <MessageCircle className="w-4 h-4" />
+          <span>Let&apos;s chat</span>
         </a>
 
         <a

@@ -1,7 +1,8 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { CALENDLY_LINK } from "@/lib/constants";
+import { MessageCircle } from "lucide-react";
+import { WHATSAPP_LINK } from "@/lib/constants";
 
 export default function StickyTopBar() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,7 +22,7 @@ export default function StickyTopBar() {
 
   return (
     <aside
-      aria-label="Quick booking navigation bar"
+      aria-label="Quick contact navigation bar"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out border-b border-gold/30 bg-[#FAF8F3]/95 backdrop-blur-md shadow-sm ${
         scrolled
           ? "translate-y-0 opacity-100"
@@ -37,12 +38,13 @@ export default function StickyTopBar() {
         </div>
 
         <a
-          href={CALENDLY_LINK}
+          href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="shrink-0 inline-flex items-center justify-center px-3 sm:px-4 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-navy bg-gold hover:bg-gold-hover transition-colors duration-150 shadow-sm focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2"
+          className="shrink-0 inline-flex items-center justify-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-navy bg-gold hover:bg-gold-hover transition-colors duration-150 shadow-sm focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2"
         >
-          Book a call
+          <MessageCircle className="w-3.5 h-3.5 text-navy" />
+          <span>Let&apos;s chat</span>
         </a>
       </div>
     </aside>

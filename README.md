@@ -36,24 +36,18 @@ Sent by **Kesav Sundararaj**, a London-based marketing and automation profession
 
 ---
 
-## 1. How to Replace Placeholders
+## 1. Contact & WhatsApp Routing
 
-All placeholders are intentionally kept in **ALL CAPS** so you can quickly search and replace them across the codebase.
+The primary CTA is **"Let's chat"**, which routes directly to Kesav's WhatsApp at **+44 7818657095** via:
+[`https://wa.me/447818657095`](https://wa.me/447818657095).
 
-The primary placeholder is `CALENDLY_LINK_PLACEHOLDER`.
-
-### Updating your Calendly link:
-Open [`lib/constants.ts`](file:///Users/kesav/Selfera/Proposals/Hamlet%20Hotels/lib/constants.ts):
+Configured in [`lib/constants.ts`](file:///Users/kesav/Selfera/Proposals/Hamlet%20Hotels/lib/constants.ts):
 
 ```typescript
-// Replace this line:
-export const CALENDLY_LINK = "CALENDLY_LINK_PLACEHOLDER";
-
-// With your real booking URL, for example:
-export const CALENDLY_LINK = "https://calendly.com/kesavsundararaj/20min";
+export const WHATSAPP_LINK = "https://wa.me/447818657095";
 ```
 
-All CTA buttons throughout the page (Hero, Sticky Top Bar, and Final CTA) automatically consume this constant.
+All CTA buttons across the page (Hero, Sticky Top Bar, and Final CTA) automatically consume this link. If you ever need to change the number or switch to a Calendly link, simply update `WHATSAPP_LINK` in `lib/constants.ts`.
 
 ---
 
