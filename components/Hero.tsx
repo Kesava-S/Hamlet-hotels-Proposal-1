@@ -23,7 +23,7 @@ export default function Hero() {
 
       {/* Subline */}
       <p className="text-sm sm:text-lg text-charcoal/85 max-w-2xl leading-relaxed mb-6 sm:mb-8 font-normal">
-        I studied your 5 hotel websites, booking setup and social channels. Here are 4 clear opportunities and a 90-day plan to act on them.
+        I studied your 5 hotel websites, booking setup and social channels. Here are 4 clear opportunities and a step-by-step plan to act on them.
       </p>
 
       {/* 3 Small Stat Chips */}

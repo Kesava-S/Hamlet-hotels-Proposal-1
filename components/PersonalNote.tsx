@@ -18,7 +18,7 @@ export default function PersonalNote() {
           </p>
 
           <div className="mt-4 text-xs font-semibold uppercase tracking-wider text-charcoal-muted">
-            Kesav Sundararaj
+            Kesavaram Sundararaj
           </div>
         </div>
       </ScrollReveal>

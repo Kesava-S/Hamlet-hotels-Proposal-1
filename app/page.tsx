@@ -44,7 +44,7 @@ export default function Home() {
         <div className="border-t border-warm-border/80" />
       </div>
 
-      {/* 5. 90-day roadmap */}
+      {/* 5. Step-by-step roadmap */}
       <Roadmap />
 
       <div className="w-full max-w-5xl mx-auto px-4 sm:px-6">

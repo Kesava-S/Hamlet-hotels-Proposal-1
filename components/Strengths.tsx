@@ -1,6 +1,6 @@
 import React from "react";
 import ScrollReveal from "./ScrollReveal";
-import { CheckCircle2, Globe, TrendingUp, ShieldCheck } from "lucide-react";
+import { Globe, TrendingUp, ShieldCheck } from "lucide-react";
 
 export default function Strengths() {
   const strengths = [
@@ -25,10 +25,6 @@ export default function Strengths() {
     <section id="strengths" className="py-12 sm:py-16 px-4 sm:px-6 max-w-5xl mx-auto">
       <ScrollReveal>
         <div className="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-forest-light border border-forest-border text-xs font-semibold text-forest mb-3">
-            <CheckCircle2 className="w-3.5 h-3.5 text-forest" />
-            <span>Praising the foundation</span>
-          </div>
           <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight mb-3">
             What you have built well
           </h2>

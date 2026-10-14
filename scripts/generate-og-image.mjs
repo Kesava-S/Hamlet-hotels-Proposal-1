@@ -69,7 +69,7 @@ const svgContent = `
 
     <!-- Author Badge -->
     <text x="${width - 240}" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" fill="#E5C158" font-weight="600" text-anchor="end">
-      By Kesav Sundararaj
+      By Kesavaram Sundararaj
     </text>
   </g>
 </svg>

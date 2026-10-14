@@ -1,19 +1,18 @@
 import React from "react";
 import ScrollReveal from "./ScrollReveal";
 import {
-  CalendarRange,
+  Layers,
   Gauge,
   Star,
   Users,
   Repeat,
   Share2,
-  Clock,
 } from "lucide-react";
 
 export default function Roadmap() {
-  const phases = [
+  const steps = [
     {
-      days: "Days 1 to 30",
+      step: "Step 01",
       theme: "Fix and measure",
       items: [
         "Website clean-up checklist across all hotel sites",
@@ -23,7 +22,7 @@ export default function Roadmap() {
       ],
     },
     {
-      days: "Days 31 to 60",
+      step: "Step 02",
       theme: "Build the engine",
       items: [
         "Central guest database live and segmented",
@@ -33,7 +32,7 @@ export default function Roadmap() {
       ],
     },
     {
-      days: "Days 61 to 90",
+      step: "Step 03",
       theme: "Grow",
       items: [
         "Local creator campaigns live with tracked codes",
@@ -57,11 +56,11 @@ export default function Roadmap() {
       <ScrollReveal>
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cream-muted border border-warm-border text-xs font-semibold text-navy mb-3">
-            <CalendarRange className="w-3.5 h-3.5 text-navy/70" />
-            <span>Implementation Timeline</span>
+            <Layers className="w-3.5 h-3.5 text-navy/70" />
+            <span>Step-by-Step Plan</span>
           </div>
           <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight mb-3">
-            90-day roadmap
+            Step-by-step roadmap
           </h2>
           <p className="text-sm sm:text-base text-charcoal/80">
             A phased progression ensuring foundational fixes deliver immediate clarity before scaling campaigns.
@@ -69,16 +68,15 @@ export default function Roadmap() {
         </div>
       </ScrollReveal>
 
-      {/* 3 Phases: Horizontal on desktop, Vertical on mobile */}
+      {/* 3 Steps: Horizontal on desktop, Vertical on mobile */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        {phases.map((phase, index) => (
-          <ScrollReveal key={phase.days} delayMs={index * 100}>
+        {steps.map((item, index) => (
+          <ScrollReveal key={item.step} delayMs={index * 100}>
             <div className="h-full bg-white rounded-card p-6 border border-warm-border shadow-soft hover:shadow-card transition-all duration-200 flex flex-col justify-between">
               <div>
                 <div className="flex items-center justify-between gap-2 mb-3">
                   <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-navy bg-cream-muted px-2.5 py-1 rounded-md border border-warm-border">
-                    <Clock className="w-3 h-3 text-navy/70" />
-                    {phase.days}
+                    {item.step}
                   </span>
                   <span className="text-xs font-bold text-charcoal-light">
                     Phase 0{index + 1}
@@ -86,14 +84,14 @@ export default function Roadmap() {
                 </div>
 
                 <h3 className="font-serif text-lg sm:text-xl font-bold text-navy mb-4">
-                  {phase.theme}
+                  {item.theme}
                 </h3>
 
                 <ul className="space-y-2.5 text-xs sm:text-sm text-charcoal/85">
-                  {phase.items.map((item) => (
-                    <li key={item} className="flex items-start gap-2">
+                  {item.items.map((point) => (
+                    <li key={point} className="flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-navy/60 shrink-0 mt-1.5" />
-                      <span className="leading-relaxed">{item}</span>
+                      <span className="leading-relaxed">{point}</span>
                     </li>
                   ))}
                 </ul>

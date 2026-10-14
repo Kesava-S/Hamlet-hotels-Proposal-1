@@ -22,7 +22,7 @@ export const PROPOSAL_DETAILS = {
     ],
   },
   sender: {
-    name: "Kesav Sundararaj",
+    name: "Kesavaram Sundararaj",
     role: "Marketing and automation professional",
     location: "London, UK",
     phone: "+44 7818 657095",
