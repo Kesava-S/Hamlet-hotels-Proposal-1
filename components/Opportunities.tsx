@@ -23,15 +23,15 @@ export default function Opportunities() {
           <strong>Reading</strong> links to both SynXis and eviivo,{" "}
           <strong>Hull</strong> uses direct-book.com with dates fixed to January 2026, and{" "}
           <strong>Thurrock</strong> uses Best Western. Promo codes differ by hotel (
-          <code className="text-xs bg-cream-muted px-1.5 py-0.5 rounded font-mono text-navy">
+          <code className="text-xs bg-white px-1.5 py-0.5 rounded border border-warm-border font-mono text-navy font-semibold">
             HMLT15
           </code>
           ,{" "}
-          <code className="text-xs bg-cream-muted px-1.5 py-0.5 rounded font-mono text-navy">
+          <code className="text-xs bg-white px-1.5 py-0.5 rounded border border-warm-border font-mono text-navy font-semibold">
             DIS1524
           </code>
           ,{" "}
-          <code className="text-xs bg-cream-muted px-1.5 py-0.5 rounded font-mono text-navy">
+          <code className="text-xs bg-white px-1.5 py-0.5 rounded border border-warm-border font-mono text-navy font-semibold">
             BOOKDIRECT
           </code>
           ).
@@ -96,10 +96,9 @@ export default function Opportunities() {
     <section id="findings" className="py-12 sm:py-16 px-4 sm:px-6 max-w-5xl mx-auto">
       <ScrollReveal>
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cream-muted border border-warm-border text-xs font-semibold text-navy mb-3">
-            <Search className="w-3.5 h-3.5 text-navy/70" />
-            <span>Digital Audit Findings</span>
-          </div>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy/70 mb-2">
+            Section 02 · Digital Audit Findings
+          </p>
           <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight mb-3">
             Findings: 4 clear opportunities
           </h2>
@@ -109,33 +108,35 @@ export default function Opportunities() {
         </div>
       </ScrollReveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7">
         {opportunities.map((item, index) => {
           const Icon = item.icon;
           return (
-            <ScrollReveal key={item.id} delayMs={index * 80}>
-              <div className="h-full bg-white rounded-card p-6 sm:p-7 border border-warm-border shadow-soft hover:shadow-card transition-all duration-200 flex flex-col justify-between">
+            <ScrollReveal key={item.id} delayMs={index * 90}>
+              <div className="luxury-card h-full rounded-card p-6 sm:p-7 flex flex-col justify-between relative overflow-hidden group">
                 <div>
-                  {/* Header */}
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-10 h-10 rounded-lg bg-cream-muted border border-warm-border flex items-center justify-center text-navy shrink-0">
-                      <Icon className="w-5 h-5 text-navy" />
-                    </div>
-                    <div>
-                      <span className="text-[11px] font-bold uppercase tracking-wider text-charcoal-light">
-                        Opportunity {item.letter}
-                      </span>
-                      <h3 className="font-serif text-lg sm:text-xl font-bold text-navy leading-snug">
-                        {item.title}
-                      </h3>
+                  {/* Card Header with Letter Plaque */}
+                  <div className="flex items-start justify-between gap-3 mb-5">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-cream-muted border border-warm-border flex items-center justify-center text-navy shrink-0 group-hover:border-navy/25 transition-colors">
+                        <Icon className="w-5 h-5 text-navy" />
+                      </div>
+                      <div>
+                        <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-charcoal-muted block">
+                          Opportunity {item.letter}
+                        </span>
+                        <h3 className="font-serif text-lg sm:text-xl font-bold text-navy leading-snug">
+                          {item.title}
+                        </h3>
+                      </div>
                     </div>
                   </div>
 
-                  {/* PAS Rows */}
+                  {/* PAS Structured Content */}
                   <div className="space-y-3.5 text-sm">
                     {/* Problem / What I found */}
-                    <div className="bg-cream/60 rounded-lg p-3.5 border border-warm-border/60">
-                      <div className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-charcoal-muted mb-1.5">
+                    <div className="bg-cream/70 rounded-lg p-3.5 border border-warm-border/70">
+                      <div className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-navy/80 mb-1.5">
                         <Search className="w-3.5 h-3.5 text-navy/70" />
                         <span>What I found</span>
                       </div>
@@ -145,12 +146,12 @@ export default function Opportunities() {
                     </div>
 
                     {/* Agitate / Why it matters */}
-                    <div className="px-1">
-                      <div className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-charcoal-muted mb-1">
+                    <div className="border-l-2 border-navy/30 pl-3 py-1">
+                      <div className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-charcoal-muted mb-0.5">
                         <AlertCircle className="w-3.5 h-3.5 text-charcoal-muted" />
                         <span>Why it matters</span>
                       </div>
-                      <p className="text-charcoal/90 text-xs sm:text-sm font-medium leading-relaxed">
+                      <p className="text-charcoal/95 text-xs sm:text-sm font-medium leading-relaxed">
                         {item.matters}
                       </p>
                     </div>
@@ -158,14 +159,16 @@ export default function Opportunities() {
                 </div>
 
                 {/* Solve / Quick win */}
-                <div className="mt-4 pt-3.5 border-t border-warm-divider">
-                  <div className="flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-forest mb-1">
-                    <Sparkles className="w-3.5 h-3.5 text-forest" />
-                    <span>Quick win</span>
+                <div className="mt-5 pt-3.5 border-t border-warm-divider">
+                  <div className="bg-forest/[0.05] border border-forest/20 rounded-lg p-3">
+                    <div className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-wider text-forest mb-0.5">
+                      <Sparkles className="w-3.5 h-3.5 text-forest" />
+                      <span>Quick win</span>
+                    </div>
+                    <p className="text-charcoal text-xs sm:text-sm font-semibold leading-relaxed">
+                      {item.quickWin}
+                    </p>
                   </div>
-                  <p className="text-charcoal text-xs sm:text-sm font-semibold leading-relaxed">
-                    {item.quickWin}
-                  </p>
                 </div>
               </div>
             </ScrollReveal>

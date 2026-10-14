@@ -9,6 +9,7 @@ import ProofOfWork from "@/components/ProofOfWork";
 import PersonalNote from "@/components/PersonalNote";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import SectionDivider from "@/components/SectionDivider";
 
 export default function Home() {
   return (
@@ -19,37 +20,27 @@ export default function Home() {
       {/* 1. Hero (above the fold) */}
       <Hero />
 
-      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6">
-        <div className="border-t border-warm-border/80" />
-      </div>
+      <SectionDivider />
 
       {/* 2. What you've built well (strengths first) */}
       <Strengths />
 
-      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6">
-        <div className="border-t border-warm-border/80" />
-      </div>
+      <SectionDivider />
 
       {/* 3. Findings: 4 opportunities (PAS cards) */}
       <Opportunities />
 
-      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6">
-        <div className="border-t border-warm-border/80" />
-      </div>
+      <SectionDivider />
 
       {/* 4. The plan: what I will build and run */}
       <PlanPillars />
 
-      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6">
-        <div className="border-t border-warm-border/80" />
-      </div>
+      <SectionDivider />
 
       {/* 5. Step-by-step roadmap */}
       <Roadmap />
 
-      <div className="w-full max-w-5xl mx-auto px-4 sm:px-6">
-        <div className="border-t border-warm-border/80" />
-      </div>
+      <SectionDivider />
 
       {/* 6. Why me: proof of work */}
       <ProofOfWork />

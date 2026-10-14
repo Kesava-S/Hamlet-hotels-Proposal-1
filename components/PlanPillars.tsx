@@ -1,6 +1,6 @@
 import React from "react";
 import ScrollReveal from "./ScrollReveal";
-import { CheckCircle, Sliders, Database, Bot, Users } from "lucide-react";
+import { CheckCircle2, Sliders, Database, Bot, Users } from "lucide-react";
 
 export default function PlanPillars() {
   const pillars = [
@@ -54,9 +54,9 @@ export default function PlanPillars() {
     <section className="py-12 sm:py-16 px-4 sm:px-6 max-w-5xl mx-auto">
       <ScrollReveal>
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-cream-muted border border-warm-border text-xs font-semibold text-navy mb-3">
-            <span>Execution Strategy</span>
-          </div>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy/70 mb-2">
+            Section 03 · Operational Strategy
+          </p>
           <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight mb-3">
             The plan: what I will build and run
           </h2>
@@ -66,36 +66,44 @@ export default function PlanPillars() {
         </div>
       </ScrollReveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7">
         {pillars.map((pillar, index) => {
           const Icon = pillar.icon;
           return (
             <ScrollReveal key={pillar.number} delayMs={index * 90}>
-              <div className="h-full bg-white rounded-card p-6 sm:p-7 border border-warm-border shadow-soft hover:shadow-card transition-all duration-200 flex flex-col justify-between">
+              <div className="luxury-card h-full rounded-card p-6 sm:p-8 flex flex-col justify-between relative overflow-hidden group">
+                {/* Large Watermark Numeral */}
+                <span
+                  className="absolute top-4 right-6 font-serif text-5xl sm:text-6xl font-bold text-navy/[0.07] select-none pointer-events-none group-hover:text-navy/[0.12] transition-colors"
+                  aria-hidden="true"
+                >
+                  {pillar.number}
+                </span>
+
                 <div>
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="font-serif text-2xl sm:text-3xl font-bold text-navy/40">
-                      {pillar.number}
-                    </span>
-                    <div className="w-9 h-9 rounded-lg bg-cream-muted border border-warm-border flex items-center justify-center text-navy">
-                      <Icon className="w-4 h-4 text-navy" />
+                  <div className="flex items-center gap-3 mb-5">
+                    <div className="w-10 h-10 rounded-lg bg-navy text-cream flex items-center justify-center shadow-soft">
+                      <Icon className="w-5 h-5 text-cream" />
                     </div>
+                    <span className="text-xs font-bold uppercase tracking-wider text-charcoal-muted">
+                      Pillar {pillar.number}
+                    </span>
                   </div>
 
-                  <h3 className="font-serif text-xl font-bold text-navy mb-2">
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-navy mb-3">
                     {pillar.title}
                   </h3>
 
-                  <p className="text-sm text-charcoal/85 leading-relaxed mb-5">
+                  <p className="text-sm text-charcoal/85 leading-relaxed mb-6">
                     {pillar.description}
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-warm-divider space-y-2">
+                <div className="pt-4 border-t border-warm-divider space-y-2.5">
                   {pillar.highlights.map((item) => (
-                    <div key={item} className="flex items-start gap-2 text-xs text-charcoal">
-                      <CheckCircle className="w-3.5 h-3.5 text-navy/60 shrink-0 mt-0.5" />
-                      <span>{item}</span>
+                    <div key={item} className="flex items-start gap-2.5 text-xs sm:text-sm text-charcoal/90">
+                      <CheckCircle2 className="w-4 h-4 text-forest shrink-0 mt-0.5" />
+                      <span className="leading-relaxed">{item}</span>
                     </div>
                   ))}
                 </div>

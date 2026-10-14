@@ -23,15 +23,17 @@ export default function StickyTopBar() {
   return (
     <aside
       aria-label="Quick contact navigation bar"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out border-b border-gold/30 bg-[#FAF8F3]/95 backdrop-blur-md shadow-sm ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out border-b border-gold/40 bg-[#FAF8F3]/95 backdrop-blur-md shadow-sm ${
         scrolled
           ? "translate-y-0 opacity-100"
           : "-translate-y-full opacity-0 pointer-events-none"
       }`}
     >
       <div className="max-w-5xl mx-auto px-4 py-2 sm:py-2.5 flex items-center justify-between gap-3">
-        <div className="flex items-center gap-2 truncate">
-          <span className="w-1.5 h-1.5 rounded-full bg-gold shrink-0" aria-hidden="true" />
+        <div className="flex items-center gap-2.5 truncate">
+          <div className="w-5 h-5 rounded-full border border-navy/20 bg-white flex items-center justify-center shrink-0">
+            <span className="font-serif font-bold text-[10px] text-navy">H</span>
+          </div>
           <p className="text-xs sm:text-sm font-medium text-navy truncate">
             Prepared for <span className="font-semibold">Prasanna Kirubakaran</span>, Hamlet Hotels
           </p>
@@ -41,9 +43,9 @@ export default function StickyTopBar() {
           href={WHATSAPP_LINK}
           target="_blank"
           rel="noopener noreferrer"
-          className="shrink-0 inline-flex items-center justify-center gap-1.5 px-3 sm:px-4 py-1.5 rounded-md text-xs sm:text-sm font-semibold text-navy bg-gold hover:bg-gold-hover transition-colors duration-150 shadow-sm focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2"
+          className="gold-cta-btn shrink-0 inline-flex items-center justify-center gap-1.5 px-3.5 sm:px-4 py-1.5 rounded-md text-xs sm:text-sm font-bold text-navy-dark focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2"
         >
-          <MessageCircle className="w-3.5 h-3.5 text-navy" />
+          <MessageCircle className="w-3.5 h-3.5 text-navy-dark" />
           <span>Let&apos;s chat</span>
         </a>
       </div>
