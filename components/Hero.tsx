@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="flex items-center justify-center gap-3 w-full max-w-lg mb-2 sm:mb-3">
         <span className="h-px bg-warm-border flex-1 max-w-[40px] sm:max-w-[60px]" aria-hidden="true" />
         <p className="text-[11px] sm:text-xs font-semibold tracking-[0.18em] uppercase text-navy/80">
-          Prepared for Prasanna Kirubakaran, CEO, Hamlet Hotels
+          Prepared for Basheer, Hamlet Hotels
         </p>
         <span className="h-px bg-warm-border flex-1 max-w-[40px] sm:max-w-[60px]" aria-hidden="true" />
       </div>

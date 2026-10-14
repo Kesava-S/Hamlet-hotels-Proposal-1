@@ -1,6 +1,6 @@
 # Hamlet Hotels — Personal Growth Proposal
 
-A tailored, high-converting single-page proposal website prepared exclusively for **Prasanna Kirubakaran**, CEO of **Hamlet Hotels** (Maidstone, Reading, Kidderminster, Hull, Thurrock, plus Telford, The Wrekin and Sheffield on the GDS list).
+A tailored, high-converting single-page proposal website prepared exclusively for **Basheer**, **Hamlet Hotels** (Maidstone, Reading, Kidderminster, Hull, Thurrock, plus Telford, The Wrekin and Sheffield on the GDS list).
 
 Sent by **Kesavaram Sundararaj**, a London-based marketing and automation professional proposing to lead direct bookings, guest data unification, and marketing automation across the Hamlet Hotels portfolio.
 
@@ -30,7 +30,7 @@ Sent by **Kesavaram Sundararaj**, a London-based marketing and automation profes
 4. **The plan: what I will build and run**: 4 numbered pillars in a 2x2 grid.
 5. **Step-by-step roadmap**: 3 phases (Step 1: Fix and measure, Step 2: Build the engine, Step 3: Grow) plus success metrics.
 6. **Why me: proof of work**: Homestay origin story, 3 stat cards with real numbers, and MSc credential.
-7. **Personal note**: Warm centered note in italic serif (*"Vanakkam Prasanna..."*).
+7. **Personal note**: Warm centered note in italic serif (*"Hi Basheer..."*).
 8. **Final CTA**: "Let's talk for 20 minutes", gold button, and direct contact line.
 9. **Footer**: Single respectful attribution line with zero promotional branding.
 
