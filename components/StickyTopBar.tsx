@@ -35,7 +35,7 @@ export default function StickyTopBar() {
             <span className="font-serif font-bold text-[10px] text-navy">H</span>
           </div>
           <p className="text-xs sm:text-sm font-medium text-navy truncate">
-            Prepared for <span className="font-semibold">Basheer</span>, Hamlet Hotels
+            Prepared for the Hamlet Hotels leadership team
           </p>
         </div>
 

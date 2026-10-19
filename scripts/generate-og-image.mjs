@@ -61,7 +61,7 @@ const svgContent = `
   <!-- Bottom Details -->
   <g transform="translate(80, 515)">
     <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" fill="#FAF8F3" font-weight="500">
-      Prepared for Basheer, Hamlet Hotels
+      Prepared for the Hamlet Hotels leadership team
     </text>
     <text x="0" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" fill="#8F9CAE">
       Maidstone · Reading · Kidderminster · Hull · Thurrock

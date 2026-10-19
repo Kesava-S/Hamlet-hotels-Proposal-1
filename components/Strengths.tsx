@@ -1,6 +1,6 @@
 import React from "react";
 import ScrollReveal from "./ScrollReveal";
-import { Globe, TrendingUp, ShieldCheck } from "lucide-react";
+import { Globe, TrendingUp, ShieldCheck, Copy } from "lucide-react";
 
 export default function Strengths() {
   const strengths = [
@@ -22,6 +22,12 @@ export default function Strengths() {
       title: "Clear owner model",
       desc: "Guaranteed income for owners, with Hamlet running operations.",
     },
+    {
+      numeral: "IV",
+      icon: Copy,
+      title: "Good foundations to copy",
+      desc: "Reading already has a newsletter, WhatsApp chat and Meta Pixel. Maidstone has clear wedding packages with prices. Kidderminster shows direct booking perks.",
+    },
   ];
 
   return (
@@ -40,7 +46,7 @@ export default function Strengths() {
         </div>
       </ScrollReveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
         {strengths.map((item, index) => {
           const Icon = item.icon;
           return (

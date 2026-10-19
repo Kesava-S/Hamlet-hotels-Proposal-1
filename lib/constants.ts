@@ -7,7 +7,7 @@ export const CALENDLY_LINK = WHATSAPP_LINK; // Aliased for compatibility
 
 export const PROPOSAL_DETAILS = {
   recipient: {
-    name: "Basheer",
+    name: "Hamlet Hotels Leadership Team",
     title: "Hamlet Hotels",
     company: "Hamlet Hotels",
     hotels: [

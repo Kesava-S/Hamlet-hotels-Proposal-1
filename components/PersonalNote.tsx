@@ -18,7 +18,7 @@ export default function PersonalNote() {
           </div>
 
           <blockquote className="font-serif italic text-base sm:text-xl text-navy leading-relaxed max-w-2xl mx-auto mb-6">
-            &ldquo;Hi Basheer. As someone building a career in UK hospitality,
+            &ldquo;Hello. As someone building a career in UK hospitality,
             I&apos;ve followed Hamlet Hotels&apos; growth with real admiration.
             I&apos;d love to help take it further, as part of your team.&rdquo;
           </blockquote>

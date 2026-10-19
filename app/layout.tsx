@@ -24,11 +24,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "A growth plan for Hamlet Hotels",
     description: "Direct bookings, guest data and marketing automation across your hotels",
-    url: "/",
+    url: "https://hamlet-growth.vercel.app/",
     siteName: "Hamlet Hotels Growth Plan",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://hamlet-growth.vercel.app/og-image.png",
         width: 1200,
         height: 630,
         alt: "A growth plan for Hamlet Hotels",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "A growth plan for Hamlet Hotels",
     description: "Direct bookings, guest data and marketing automation across your hotels",
-    images: ["/og-image.png"],
+    images: ["https://hamlet-growth.vercel.app/og-image.png"],
   },
 };
 
