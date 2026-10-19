@@ -51,7 +51,7 @@ export default function Strengths() {
           const Icon = item.icon;
           return (
             <ScrollReveal key={item.title} delayMs={index * 100}>
-              <div className="h-full bg-white rounded-card p-6 sm:p-7 border border-forest-border/80 shadow-soft relative overflow-hidden transition-all duration-300 hover:shadow-card hover:-translate-y-0.5 group">
+              <div className="h-full bg-white rounded-card p-5 sm:p-6 border border-forest-border/80 shadow-soft relative overflow-hidden transition-all duration-300 hover:shadow-card hover:-translate-y-0.5 group">
                 {/* Top Subtle Green Accent Line */}
                 <div className="absolute top-0 left-0 right-0 h-1 bg-forest/40 group-hover:bg-forest transition-colors" />
 

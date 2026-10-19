@@ -20,25 +20,21 @@ export default function CarmichaelPilot() {
       </ScrollReveal>
 
       <ScrollReveal delayMs={100}>
-        <div className="bg-white rounded-card p-8 sm:p-10 border border-warm-border shadow-card relative overflow-hidden">
+        <div className="bg-white rounded-card p-7 sm:p-10 border border-warm-border shadow-card relative overflow-hidden">
           {/* Subtle inner hairline */}
           <div
             className="absolute inset-3 border border-warm-border/40 rounded-lg pointer-events-none"
             aria-hidden="true"
           />
 
-          <div className="flex items-start gap-4 mb-6">
-            <div className="w-11 h-11 rounded-lg bg-navy text-cream flex items-center justify-center shadow-soft shrink-0">
+          {/* Icon + label row */}
+          <div className="flex items-center gap-3 mb-5">
+            <div className="w-10 h-10 rounded-lg bg-navy text-cream flex items-center justify-center shadow-soft shrink-0">
               <Rocket className="w-5 h-5 text-cream" />
             </div>
-            <div>
-              <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-charcoal-muted block mb-1">
-                30-day pilot
-              </span>
-              <h3 className="font-serif text-xl sm:text-2xl font-bold text-navy">
-                The Carmichael Hotel, Hull
-              </h3>
-            </div>
+            <span className="text-xs font-bold uppercase tracking-wider text-charcoal-muted">
+              30-day pilot
+            </span>
           </div>
 
           <p className="text-sm sm:text-base text-charcoal/85 leading-relaxed mb-5">

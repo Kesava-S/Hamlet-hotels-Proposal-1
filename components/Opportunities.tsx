@@ -127,7 +127,7 @@ export default function Opportunities() {
         </div>
       </ScrollReveal>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-7 [&>*:last-child:nth-child(odd)]:md:col-span-2 [&>*:last-child:nth-child(odd)]:md:max-w-[calc(50%-14px)] [&>*:last-child:nth-child(odd)]:md:mx-auto [&>*:last-child:nth-child(odd)]:md:w-full">
         {opportunities.map((item, index) => {
           const Icon = item.icon;
           return (

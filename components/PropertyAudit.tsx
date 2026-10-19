@@ -142,7 +142,7 @@ export default function PropertyAudit() {
                   <ul className="space-y-1.5">
                     {hotel.opportunities.map((item) => (
                       <li key={item} className="flex items-start gap-2 text-xs sm:text-sm text-charcoal/85 leading-relaxed">
-                        <span className="w-1 h-1 rounded-full bg-navy/40 shrink-0 mt-2" />
+                        <span className="w-1 h-1 rounded-full bg-navy/40 shrink-0 mt-[5px]" />
                         <span>{item}</span>
                       </li>
                     ))}
