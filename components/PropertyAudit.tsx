@@ -95,7 +95,7 @@ export default function PropertyAudit() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy/70 mb-2">
             Property Audit
           </p>
-          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight mb-3">
+          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight leading-snug sm:leading-tight mb-3 sm:mb-4">
             Hotel-by-hotel snapshot
           </h2>
           <p className="text-sm sm:text-base text-charcoal/80">
@@ -110,7 +110,7 @@ export default function PropertyAudit() {
             <div className="luxury-card h-full rounded-card p-6 sm:p-7 flex flex-col relative overflow-hidden group">
               {/* Hotel header */}
               <div className="mb-5 pb-4 border-b border-warm-divider">
-                <h3 className="font-serif text-xl font-bold text-navy leading-tight mb-1">
+                <h3 className="font-serif text-xl font-bold text-navy leading-snug mb-1.5">
                   {hotel.name}
                 </h3>
                 <p className="text-xs text-charcoal-muted font-medium">{hotel.location}</p>

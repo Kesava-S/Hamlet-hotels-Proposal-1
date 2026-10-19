@@ -21,7 +21,7 @@ export default function FinalCTA() {
             Next Step
           </p>
 
-          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-white tracking-tight mb-4">
+          <h2 className="font-serif text-3xl sm:text-5xl font-bold text-white tracking-tight leading-snug sm:leading-tight mb-4 sm:mb-5">
             Let&apos;s talk for 20 minutes
           </h2>
 

@@ -58,7 +58,7 @@ export default function PlanPillars() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy/70 mb-2">
             Section 03 · Operational Strategy
           </p>
-          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight mb-3">
+          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight leading-snug sm:leading-tight mb-3 sm:mb-4">
             The plan: what I will build and run
           </h2>
           <p className="text-sm sm:text-base text-charcoal/80">
@@ -91,7 +91,7 @@ export default function PlanPillars() {
                     </span>
                   </div>
 
-                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-navy mb-3">
+                  <h3 className="font-serif text-xl sm:text-2xl font-bold text-navy mb-3 leading-snug">
                     {pillar.title}
                   </h3>
 

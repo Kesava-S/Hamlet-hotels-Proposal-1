@@ -30,9 +30,9 @@ export default function Hero() {
       </div>
 
       {/* Main Headline */}
-      <h1 className="font-serif text-2xl sm:text-4xl lg:text-[52px] font-bold text-navy leading-[1.15] tracking-tight max-w-4xl mb-4 sm:mb-6">
+      <h1 className="font-serif text-2xl sm:text-4xl lg:text-[52px] font-bold text-navy leading-[1.4] sm:leading-[1.3] lg:leading-[1.28] tracking-tight max-w-4xl mb-6 sm:mb-8">
         More direct bookings and returning guests across Hamlet Hotels
-        <span className="block text-base sm:text-2xl lg:text-[30px] font-serif font-normal italic text-navy/85 mt-2 sm:mt-3">
+        <span className="block text-base sm:text-2xl lg:text-[30px] font-serif font-normal italic text-navy/85 mt-4 sm:mt-5 lg:mt-6 leading-relaxed sm:leading-normal">
           through one brand, better guest data and smart automation
         </span>
       </h1>

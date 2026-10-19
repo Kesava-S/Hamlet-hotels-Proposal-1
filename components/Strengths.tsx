@@ -37,7 +37,7 @@ export default function Strengths() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-forest mb-2">
             Section 01 · Foundations
           </p>
-          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight mb-3">
+          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight leading-snug sm:leading-tight mb-3 sm:mb-4">
             What you have built well
           </h2>
           <p className="text-sm sm:text-base text-charcoal/80">
@@ -64,7 +64,7 @@ export default function Strengths() {
                   </span>
                 </div>
 
-                <h3 className="font-serif text-lg sm:text-xl font-bold text-navy mb-2.5">
+                <h3 className="font-serif text-lg sm:text-xl font-bold text-navy mb-2.5 leading-snug">
                   {item.title}
                 </h3>
                 <p className="text-sm text-charcoal/85 leading-relaxed">

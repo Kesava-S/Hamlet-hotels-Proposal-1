@@ -118,7 +118,7 @@ export default function Opportunities() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy/70 mb-2">
             Section 02 · Digital Audit Findings
           </p>
-          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight mb-3">
+          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight leading-snug sm:leading-tight mb-3 sm:mb-4">
             Findings: 5 clear opportunities
           </h2>
           <p className="text-sm sm:text-base text-charcoal/80">

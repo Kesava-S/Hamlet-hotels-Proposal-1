@@ -10,7 +10,7 @@ export default function CarmichaelPilot() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy/70 mb-2">
             Recommended Starting Point
           </p>
-          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight mb-3">
+          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight leading-snug sm:leading-tight mb-3 sm:mb-4">
             Suggested pilot: The Carmichael Hotel, Hull
           </h2>
           <p className="text-sm sm:text-base text-charcoal/80">

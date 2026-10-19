@@ -61,7 +61,7 @@ export default function Roadmap() {
           <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-navy/70 mb-2">
             Section 04 · Implementation
           </p>
-          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight mb-3">
+          <h2 className="font-serif text-2xl sm:text-4xl font-bold text-navy tracking-tight leading-snug sm:leading-tight mb-3 sm:mb-4">
             Step-by-step roadmap
           </h2>
           <p className="text-sm sm:text-base text-charcoal/80">
@@ -85,7 +85,7 @@ export default function Roadmap() {
                   </span>
                 </div>
 
-                <h3 className="font-serif text-lg sm:text-xl font-bold text-navy mb-4">
+                <h3 className="font-serif text-lg sm:text-xl font-bold text-navy mb-4 leading-snug">
                   {item.theme}
                 </h3>
 
@@ -110,7 +110,7 @@ export default function Roadmap() {
             <span className="text-[10px] font-bold uppercase tracking-[0.18em] text-navy/70 block mb-1">
               Accountability Framework
             </span>
-            <h3 className="font-serif text-xl sm:text-2xl font-bold text-navy mb-2">
+            <h3 className="font-serif text-xl sm:text-2xl font-bold text-navy mb-2 leading-snug">
               How we will measure success
             </h3>
             <p className="text-xs sm:text-sm text-charcoal/80">
